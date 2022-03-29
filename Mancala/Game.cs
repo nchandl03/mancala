@@ -48,6 +48,12 @@ namespace Mancala
             else { return bottomStoreIndex + 1 + pit;  }
         }
 
+        bool isEmpty (int pit)
+        {
+            if (board[pit] == 0) {  return true; }
+            return false;
+        }
+
         bool isValidMove(int pit)
         {
             // chosen pit is too big/small for board
@@ -59,7 +65,7 @@ namespace Mancala
             int boardIndex = getBoardIndex(pit);
 
             // chosen pit is empty
-            if (board[boardIndex] <= 0) { return false; }
+            if (isEmpty(boardIndex)) { return false; }
 
             return true;
         }
@@ -74,6 +80,21 @@ namespace Mancala
             else if (!bottomTurn && landingSpot == topStoreIndex)
             {
                     return true;
+            }
+
+            return false;
+        }
+
+        // special move #2
+        bool lastSeedInEmpty(int landingSpot)
+        {
+            if (bottomTurn && landingSpot >= 0 && landingSpot < bottomStoreIndex) 
+            {
+                if (isEmpty(landingSpot)) { return true; }
+            }
+            
+            if (!bottomTurn && landingSpot > bottomStoreIndex && landingSpot < topStoreIndex) {
+                if (isEmpty(landingSpot)) { return true; }
             }
 
             return false;
