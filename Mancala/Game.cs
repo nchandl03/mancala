@@ -21,7 +21,7 @@ namespace Mancala
         int topStoreIndex, bottomStoreIndex;
         bool bottomTurn;
 
-        Game(int bottomSize, int numMarbles)
+        public Game(int bottomSize, int numMarbles)
         {
             int totalpits = bottomSize * 2 + 2;
 
@@ -148,14 +148,14 @@ namespace Mancala
         }
 
         // change later
-        void declareWinner()
+        public void declareWinner()
         {
             if      (board[bottomStoreIndex] > board[topStoreIndex]) { /* bottom wins */ }
             else if (board[topStoreIndex] > board[bottomStoreIndex]) { /* top wins */ }
             else                                                     { /* tie! */  }
         }
 
-        int playMove(int chosenIndex)
+        public int playMove(int chosenIndex)
         {
             if (!isValidMove(chosenIndex)) { return -1; }
 
@@ -172,12 +172,15 @@ namespace Mancala
             {
                 dropIndex = (dropIndex + 1) % boardSize;
 
+                Console.WriteLine("DI: " + dropIndex.ToString() + ", TSI: " + topStoreIndex.ToString());
                 if (bottomTurn && dropIndex == topStoreIndex) { dropIndex = (dropIndex + 1) % boardSize; }
                 else if (!bottomTurn && dropIndex == bottomStoreIndex) { dropIndex = (dropIndex + 1) % boardSize; }
 
                 board[dropIndex]++;
             }
             dropIndex = (dropIndex + 1) % boardSize;
+            if (bottomTurn && dropIndex == topStoreIndex) { dropIndex = (dropIndex + 1) % boardSize; }
+            else if (!bottomTurn && dropIndex == bottomStoreIndex) { dropIndex = (dropIndex + 1) % boardSize; }
 
 
             // THREE OPTIONS: Special Move 1, Special Move 2, Finish Regular Turn
@@ -220,6 +223,34 @@ namespace Mancala
             }
 
             return 1;
+        }
+
+        public void printBoardToConsole()
+        {
+            Console.WriteLine("Board Below:");
+            // top row
+            Console.Write("   ");
+            for (int i = topStoreIndex - 1; i > bottomStoreIndex; i--)
+            {
+                Console.Write(board[i].ToString() + "  ");
+            }
+
+            // middle row
+            Console.Write("\n" + board[topStoreIndex].ToString() + "  ");
+            for (int i = topStoreIndex - 1; i > bottomStoreIndex; i--)
+            {
+                Console.Write("   ");
+            }
+            Console.Write(board[bottomStoreIndex].ToString() + "\n");
+
+            // bottom row
+            Console.Write("   ");
+            for (int i = 0; i < bottomStoreIndex; i++)
+            {
+                Console.Write(board[i].ToString() + "  ");
+            }
+
+            Console.WriteLine("\n\n");
         }
 
     }

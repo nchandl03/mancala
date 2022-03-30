@@ -16,7 +16,49 @@ namespace Mancala
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            // Application.Run(new Form1());
+
+            Game game = new Game(6, 4);
+            game.printBoardToConsole();
+
+            Console.WriteLine("Pick: 3rd pit, bottom row.");
+            game.playMove(2);
+            game.printBoardToConsole();
+
+            Console.WriteLine("Pick: 2nd pit, bottom row.");
+            game.playMove(1);
+            game.printBoardToConsole();
+
+            Console.WriteLine("Pick: 5th pit, top row.");
+            game.playMove(4);
+            game.printBoardToConsole();
+
+            Console.WriteLine("Pick: 1st pit, bottom row.");
+            game.playMove(0);
+            game.printBoardToConsole();
+
+            Console.WriteLine("Pick: 5th pit, top row. (should ignore)");
+            game.playMove(4);
+            game.printBoardToConsole();
+
+            Console.WriteLine("Pick: 6th pit, top row. -----");
+            game.playMove(5);
+            game.printBoardToConsole();
+
+            Console.WriteLine("Pick: 3rd pit, bottom row.");
+            game.playMove(2);
+            game.printBoardToConsole();
+
+            Console.WriteLine("Pick: 4th pit, top row.");
+            game.playMove(3);
+            game.printBoardToConsole();
+
+            Console.WriteLine("Pick: 6th pit, bottom row.");
+            game.playMove(5);
+            game.printBoardToConsole();
+
+
+            Console.Read();
         }
     }
 }
