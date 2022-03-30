@@ -103,7 +103,7 @@ namespace Mancala
                 if (isEmpty(landingSpot)) { return true; }
             }
 
-            if (!bottomTurn && landingSpot > bottomStoreIndex && landingSpot < topStoreIndex)
+            else if (!bottomTurn && landingSpot > bottomStoreIndex && landingSpot < topStoreIndex)
             {
                 if (isEmpty(landingSpot)) { return true; }
             }
@@ -130,12 +130,40 @@ namespace Mancala
             return false;
         }
 
+        void runEndGameProtocol()
+        {
+            for (int i = 0; i < topStoreIndex; i++)
+            {
+                if (i < bottomStoreIndex)
+                {
+                    board[bottomStoreIndex] += board[i];
+                    board[i] = 0;
+                }
+                else if (i > bottomStoreIndex)
+                {
+                    board[topStoreIndex] += board[i];
+                    board[i] = 0;
+                }
+            }
+        }
+
+        // change later
+        void declareWinner()
+        {
+            if      (board[bottomStoreIndex] > board[topStoreIndex]) { /* bottom wins */ }
+            else if (board[topStoreIndex] > board[bottomStoreIndex]) { /* top wins */ }
+            else                                                     { /* tie! */  }
+        }
+
         int playMove(int chosenIndex)
         {
             if (!isValidMove(chosenIndex)) { return -1; }
 
             int pit = getBoardIndex(chosenIndex);
             int numMarbles = board[pit];
+
+            // picked up marbles, set chosen pit to 0
+            board[pit] = 0;
 
             int dropIndex = (pit) % boardSize;
 
@@ -151,6 +179,8 @@ namespace Mancala
             }
             dropIndex = (dropIndex + 1) % boardSize;
 
+
+            // THREE OPTIONS: Special Move 1, Special Move 2, Finish Regular Turn
             // take another turn
             if (lastSeedInStore(dropIndex))
             {
@@ -181,7 +211,11 @@ namespace Mancala
 
             if (gameOver())
             {
-                // run game over protocol, check who wins
+                // run game over protocol
+                runEndGameProtocol();
+                declareWinner();
+                
+                // check who wins
                 return 0;
             }
 
