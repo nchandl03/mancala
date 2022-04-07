@@ -8,3 +8,13 @@ C:\Users\nchandl\Desktop\Spring 22\CS 438\Mancala\obj\Debug\Mancala.csproj.Gener
 C:\Users\nchandl\Desktop\Spring 22\CS 438\Mancala\obj\Debug\Mancala.csproj.CoreCompileInputs.cache
 C:\Users\nchandl\Desktop\Spring 22\CS 438\Mancala\obj\Debug\Mancala.exe
 C:\Users\nchandl\Desktop\Spring 22\CS 438\Mancala\obj\Debug\Mancala.pdb
+C:\Users\nchandl\Desktop\Spring22\CS 438\Mancala\bin\Debug\Mancala.exe.config
+C:\Users\nchandl\Desktop\Spring22\CS 438\Mancala\bin\Debug\Mancala.exe
+C:\Users\nchandl\Desktop\Spring22\CS 438\Mancala\bin\Debug\Mancala.pdb
+C:\Users\nchandl\Desktop\Spring22\CS 438\Mancala\obj\Debug\Mancala.csproj.AssemblyReference.cache
+C:\Users\nchandl\Desktop\Spring22\CS 438\Mancala\obj\Debug\Mancala.csproj.SuggestedBindingRedirects.cache
+C:\Users\nchandl\Desktop\Spring22\CS 438\Mancala\obj\Debug\Mancala.Properties.Resources.resources
+C:\Users\nchandl\Desktop\Spring22\CS 438\Mancala\obj\Debug\Mancala.csproj.GenerateResource.cache
+C:\Users\nchandl\Desktop\Spring22\CS 438\Mancala\obj\Debug\Mancala.csproj.CoreCompileInputs.cache
+C:\Users\nchandl\Desktop\Spring22\CS 438\Mancala\obj\Debug\Mancala.exe
+C:\Users\nchandl\Desktop\Spring22\CS 438\Mancala\obj\Debug\Mancala.pdb

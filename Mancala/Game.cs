@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mancala
 {
-    internal class Game
+    public class Game
     {
         /*
          * Board Setup rn:
@@ -15,11 +15,11 @@ namespace Mancala
          *      0   1   2   3   4   5
          */
 
-        int[] board;
-        int boardSize;
+        public int[] board;
+        public int boardSize;
 
-        int topStoreIndex, bottomStoreIndex;
-        bool bottomTurn;
+        public int topStoreIndex, bottomStoreIndex;
+        public bool bottomTurn;
 
         public Game(int bottomSize, int numMarbles)
         {
@@ -172,7 +172,6 @@ namespace Mancala
             {
                 dropIndex = (dropIndex + 1) % boardSize;
 
-                Console.WriteLine("DI: " + dropIndex.ToString() + ", TSI: " + topStoreIndex.ToString());
                 if (bottomTurn && dropIndex == topStoreIndex) { dropIndex = (dropIndex + 1) % boardSize; }
                 else if (!bottomTurn && dropIndex == bottomStoreIndex) { dropIndex = (dropIndex + 1) % boardSize; }
 

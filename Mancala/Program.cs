@@ -19,15 +19,22 @@ namespace Mancala
             // Application.Run(new Form1());
 
             Game game = new Game(6, 4);
+            FileIO fileIO = new FileIO("input1.txt", "input2.txt", "C:\\Users\\nchandl\\Desktop\\Spring22\\CS 438\\output.txt");
             game.printBoardToConsole();
+            fileIO.outputBoard(game);
+            Console.WriteLine(fileIO.readInMove(game));
 
             Console.WriteLine("Pick: 3rd pit, bottom row.");
             game.playMove(2);
             game.printBoardToConsole();
+            fileIO.outputBoard(game);
 
             Console.WriteLine("Pick: 2nd pit, bottom row.");
             game.playMove(1);
             game.printBoardToConsole();
+            fileIO.outputBoard(game);
+
+            Console.WriteLine(fileIO.readInMove(game));
 
             Console.WriteLine("Pick: 5th pit, top row.");
             game.playMove(4);
