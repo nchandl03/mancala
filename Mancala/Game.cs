@@ -157,7 +157,7 @@ namespace Mancala
 
         public int playMove(int chosenIndex)
         {
-            if (!isValidMove(chosenIndex)) { return -1; }
+            if (!isValidMove(chosenIndex)) { Console.WriteLine("Not a valid move.");  return -1; }
 
             int pit = getBoardIndex(chosenIndex);
             int numMarbles = board[pit];

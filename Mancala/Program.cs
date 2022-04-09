@@ -8,6 +8,10 @@ namespace Mancala
 {
     static class Program
     {
+        const int GAME_WON = 0;
+        const int MOVE_ISSUE = -1;
+        const int IO_ISSUE = -5;
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -19,53 +23,30 @@ namespace Mancala
             // Application.Run(new Form1());
 
             Game game = new Game(6, 4);
-            FileIO fileIO = new FileIO("input1.txt", "input2.txt", "C:\\Users\\nchandl\\Desktop\\Spring22\\CS 438\\output.txt");
-            game.printBoardToConsole();
-            fileIO.outputBoard(game);
-            Console.WriteLine(fileIO.readInMove(game));
+            FileIO fileIO = new FileIO("topInput.txt", "botInput.txt", "output.txt");
 
-            Console.WriteLine("Pick: 3rd pit, bottom row.");
-            game.playMove(2);
-            game.printBoardToConsole();
-            fileIO.outputBoard(game);
+            int curMove, played = 1;
+            bool outCheck;
 
-            Console.WriteLine("Pick: 2nd pit, bottom row.");
-            game.playMove(1);
-            game.printBoardToConsole();
-            fileIO.outputBoard(game);
+            while (played > 0)
+            {
+                outCheck = fileIO.outputBoard(game);
+                curMove = fileIO.readInMove(game);
 
-            Console.WriteLine(fileIO.readInMove(game));
+                if (curMove > -1 && outCheck) { played = game.playMove(curMove); }
+                else                          { played = IO_ISSUE; }
+            }
 
-            Console.WriteLine("Pick: 5th pit, top row.");
-            game.playMove(4);
-            game.printBoardToConsole();
-
-            Console.WriteLine("Pick: 1st pit, bottom row.");
-            game.playMove(0);
-            game.printBoardToConsole();
-
-            Console.WriteLine("Pick: 5th pit, top row. (should ignore)");
-            game.playMove(4);
-            game.printBoardToConsole();
-
-            Console.WriteLine("Pick: 6th pit, top row. -----");
-            game.playMove(5);
-            game.printBoardToConsole();
-
-            Console.WriteLine("Pick: 3rd pit, bottom row.");
-            game.playMove(2);
-            game.printBoardToConsole();
-
-            Console.WriteLine("Pick: 4th pit, top row.");
-            game.playMove(3);
-            game.printBoardToConsole();
-
-            Console.WriteLine("Pick: 6th pit, bottom row.");
-            game.playMove(5);
-            game.printBoardToConsole();
-
-
-            Console.Read();
+            if (played == GAME_WON)
+            {
+                /* declare winner however it's done */
+            } else if (played == MOVE_ISSUE)
+            {
+                /* acknowledge invalid move */
+            } else
+            {
+                /* acknowledge I/O issue */
+            }
         }
     }
 }
