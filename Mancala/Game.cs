@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mancala
 {
-    public class Game
+    public static class Game
     {
         /*
          * Board Setup rn:
@@ -15,13 +15,15 @@ namespace Mancala
          *      0   1   2   3   4   5
          */
 
-        public int[] board;
-        public int boardSize;
+        public static int[] board;
+        public static int boardSize;
 
-        public int topStoreIndex, bottomStoreIndex;
-        public bool bottomTurn;
+        public static int topStoreIndex, bottomStoreIndex;
+        public static bool bottomTurn;
 
-        public Game(int bottomSize, int numMarbles)
+        public static bool topHuman, botHuman;
+
+        public static void setGame(int bottomSize, int numMarbles, int topIsHuman, int botIsHuman)
         {
             int totalpits = bottomSize * 2 + 2;
 
@@ -39,16 +41,27 @@ namespace Mancala
             board[topStoreIndex] = 0;
             board[bottomStoreIndex] = 0;
 
+            if (topIsHuman == 0)
+            {
+                topHuman = true;
+            } else { topHuman = false; }
+
+            if (botIsHuman == 0)
+            {
+                botHuman = true;
+            }
+            else { botHuman = false; }
+
             bottomTurn = true;
         }
 
-        int getBoardIndex(int pit)
+        static int getBoardIndex(int pit)
         {
             if (bottomTurn) { return pit; }
             else { return bottomStoreIndex + 1 + pit; }
         }
 
-        int getAcrossIndex(int boardIndex)
+        static int getAcrossIndex(int boardIndex)
         {
             int acrossIndex;
 
@@ -58,13 +71,13 @@ namespace Mancala
             return acrossIndex;
         }
 
-        bool isEmpty(int pit)
+        static bool isEmpty(int pit)
         {
             if (board[pit] == 0) { return true; }
             return false;
         }
 
-        bool isValidMove(int pit)
+        static bool isValidMove(int pit)
         {
             // chosen pit is too big/small for board
             if (pit < 0 || pit >= bottomStoreIndex)
@@ -81,7 +94,7 @@ namespace Mancala
         }
 
         // special move #1
-        bool lastSeedInStore(int landingSpot)
+        static bool lastSeedInStore(int landingSpot)
         {
             if (bottomTurn && landingSpot == bottomStoreIndex)
             {
@@ -96,7 +109,7 @@ namespace Mancala
         }
 
         // special move #2
-        bool lastSeedInEmpty(int landingSpot)
+        static bool lastSeedInEmpty(int landingSpot)
         {
             if (bottomTurn && landingSpot >= 0 && landingSpot < bottomStoreIndex)
             {
@@ -111,7 +124,7 @@ namespace Mancala
             return false;
         }
 
-        bool gameOver()
+        static bool gameOver()
         {
             int sumMarbles = 0;
             for (int i = bottomStoreIndex + 1; i < topStoreIndex; i++)
@@ -130,7 +143,7 @@ namespace Mancala
             return false;
         }
 
-        void runEndGameProtocol()
+        static void runEndGameProtocol()
         {
             for (int i = 0; i < topStoreIndex; i++)
             {
@@ -148,14 +161,14 @@ namespace Mancala
         }
 
         // change later
-        public void declareWinner()
+        static public void declareWinner()
         {
             if      (board[bottomStoreIndex] > board[topStoreIndex]) { /* bottom wins */ }
             else if (board[topStoreIndex] > board[bottomStoreIndex]) { /* top wins */ }
             else                                                     { /* tie! */  }
         }
 
-        public int playMove(int chosenIndex)
+        static public int playMove(int chosenIndex)
         {
             if (!isValidMove(chosenIndex)) { Console.WriteLine("Not a valid move.");  return -1; }
 
@@ -224,7 +237,7 @@ namespace Mancala
             return 1;
         }
 
-        public void printBoardToConsole()
+        static public void printBoardToConsole()
         {
             Console.WriteLine("Board Below:");
             // top row

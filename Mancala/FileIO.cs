@@ -21,34 +21,37 @@ namespace Mancala
         }
 
         // always outputs board the same way - is that okay?
-        public bool outputBoard(Game game)
+        public bool outputBoard()
         {
-            if (game.board.Length < 1)
+            if (Game.board.Length < 1)
                 return false;
+
+            if (Game.botHuman && Game.topHuman)
+                return true;
 
             try
             {
                 using (StreamWriter sw = new StreamWriter(fileOut))
                 {
                     sw.Write("   ");
-                    for (int i = game.topStoreIndex - 1; i > game.bottomStoreIndex; i--)
+                    for (int i = Game.topStoreIndex - 1; i > Game.bottomStoreIndex; i--)
                     {
-                        sw.Write(game.board[i].ToString() + "  ");
+                        sw.Write(Game.board[i].ToString() + "  ");
                     }
 
                     // middle row
-                    sw.Write("\n" + game.board[game.topStoreIndex].ToString() + "  ");
-                    for (int i = game.topStoreIndex - 1; i > game.bottomStoreIndex; i--)
+                    sw.Write("\n" + Game.board[Game.topStoreIndex].ToString() + "  ");
+                    for (int i = Game.topStoreIndex - 1; i > Game.bottomStoreIndex; i--)
                     {
                         sw.Write("   ");
                     }
-                    sw.Write(game.board[game.bottomStoreIndex].ToString() + "\n");
+                    sw.Write(Game.board[Game.bottomStoreIndex].ToString() + "\n");
 
                     // bottom row
                     sw.Write("   ");
-                    for (int i = 0; i < game.bottomStoreIndex; i++)
+                    for (int i = 0; i < Game.bottomStoreIndex; i++)
                     {
-                        sw.Write(game.board[i].ToString() + "  ");
+                        sw.Write(Game.board[i].ToString() + "  ");
                     }
 
                     sw.Flush();
@@ -63,11 +66,12 @@ namespace Mancala
 
         }
 
-        public int readInMove(Game game)
+        public int readInMove()
         {
             string line;
-            string path = game.bottomTurn ? fileInBottom : fileInTop;
+            string path = Game.bottomTurn ? fileInBottom : fileInTop;
             int moveIndex = -2;
+
 
             try
             {

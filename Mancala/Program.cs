@@ -22,7 +22,7 @@ namespace Mancala
             Application.SetCompatibleTextRenderingDefault(false);
             // Application.Run(new Form1());
 
-            Game game = new Game(6, 4);
+            
             FileIO fileIO = new FileIO("topInput.txt", "botInput.txt", "output.txt");
 
             int curMove, played = 1;
@@ -31,7 +31,15 @@ namespace Mancala
             while (played > 0)
             {
                 outCheck = fileIO.outputBoard(game);
-                curMove = fileIO.readInMove(game);
+
+                if ((game.bottomTurn & game.botHuman) || (!game.bottomTurn && game.topHuman))
+                {
+                    curMove = 
+                }
+                else
+                {
+                    curMove = fileIO.readInMove(game);
+                }
 
                 if (curMove > -1 && outCheck) { played = game.playMove(curMove); }
                 else                          { played = IO_ISSUE; }
