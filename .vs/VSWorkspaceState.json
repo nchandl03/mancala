@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Mancala"
+    "\\Mancala",
+    "\\Mancala\\bin",
+    "\\Mancala\\obj",
+    "\\Mancala\\Properties"
   ],
-  "SelectedNode": "\\Mancala\\Form1.Designer.cs",
+  "SelectedNode": "\\Mancala\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
