@@ -39,8 +39,6 @@ namespace Mancala
             this.computer2 = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
@@ -56,18 +54,18 @@ namespace Mancala
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.slot0 = new System.Windows.Forms.Label();
+            this.slot12 = new System.Windows.Forms.Label();
+            this.slot1 = new System.Windows.Forms.Label();
+            this.slot11 = new System.Windows.Forms.Label();
+            this.slot2 = new System.Windows.Forms.Label();
+            this.slot10 = new System.Windows.Forms.Label();
+            this.slot3 = new System.Windows.Forms.Label();
+            this.slot9 = new System.Windows.Forms.Label();
+            this.slot4 = new System.Windows.Forms.Label();
+            this.slot8 = new System.Windows.Forms.Label();
+            this.slot7 = new System.Windows.Forms.Label();
+            this.slot5 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
@@ -80,6 +78,8 @@ namespace Mancala
             this.checkBox10 = new System.Windows.Forms.CheckBox();
             this.checkBox11 = new System.Windows.Forms.CheckBox();
             this.checkBox12 = new System.Windows.Forms.CheckBox();
+            this.slot6 = new System.Windows.Forms.Label();
+            this.slot13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
@@ -196,26 +196,6 @@ namespace Mancala
             this.button2.Text = "Exit";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.Tan;
-            this.textBox1.Location = new System.Drawing.Point(262, 422);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(118, 20);
-            this.textBox1.TabIndex = 29;
-            this.textBox1.Text = "0";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.Tan;
-            this.textBox2.Location = new System.Drawing.Point(262, 30);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(118, 20);
-            this.textBox2.TabIndex = 30;
-            this.textBox2.Text = "0";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox15
             // 
@@ -355,150 +335,151 @@ namespace Mancala
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // label5
+            // slot0
             // 
-            this.label5.AutoSize = true;
-            this.label5.Image = global::Mancala.Properties.Resources.mancalaBrown;
-            this.label5.Location = new System.Drawing.Point(271, 80);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(13, 13);
-            this.label5.TabIndex = 31;
-            this.label5.Text = "4";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label5.Visible = false;
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.slot0.AutoSize = true;
+            this.slot0.Image = global::Mancala.Properties.Resources.mancalaBrown;
+            this.slot0.Location = new System.Drawing.Point(271, 80);
+            this.slot0.Name = "slot0";
+            this.slot0.Size = new System.Drawing.Size(13, 13);
+            this.slot0.TabIndex = 31;
+            this.slot0.Text = "4";
+            this.slot0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.slot0.Visible = false;
+            this.slot0.Click += new System.EventHandler(this.label5_Click);
             // 
-            // label6
+            // slot12
             // 
-            this.label6.AutoSize = true;
-            this.label6.Image = global::Mancala.Properties.Resources.mancalaBrown;
-            this.label6.Location = new System.Drawing.Point(355, 80);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(13, 13);
-            this.label6.TabIndex = 32;
-            this.label6.Text = "4";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label6.Visible = false;
+            this.slot12.AutoSize = true;
+            this.slot12.Image = global::Mancala.Properties.Resources.mancalaBrown;
+            this.slot12.Location = new System.Drawing.Point(355, 80);
+            this.slot12.Name = "slot12";
+            this.slot12.Size = new System.Drawing.Size(13, 13);
+            this.slot12.TabIndex = 32;
+            this.slot12.Text = "4";
+            this.slot12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.slot12.Visible = false;
             // 
-            // label7
+            // slot1
             // 
-            this.label7.AutoSize = true;
-            this.label7.Image = global::Mancala.Properties.Resources.mancalaBrown;
-            this.label7.Location = new System.Drawing.Point(271, 142);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(13, 13);
-            this.label7.TabIndex = 33;
-            this.label7.Text = "4";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label7.Visible = false;
+            this.slot1.AutoSize = true;
+            this.slot1.Image = global::Mancala.Properties.Resources.mancalaBrown;
+            this.slot1.Location = new System.Drawing.Point(271, 142);
+            this.slot1.Name = "slot1";
+            this.slot1.Size = new System.Drawing.Size(13, 13);
+            this.slot1.TabIndex = 33;
+            this.slot1.Text = "4";
+            this.slot1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.slot1.Visible = false;
+            this.slot1.Click += new System.EventHandler(this.slot1_Click);
             // 
-            // label8
+            // slot11
             // 
-            this.label8.AutoSize = true;
-            this.label8.Image = global::Mancala.Properties.Resources.mancalaBrown;
-            this.label8.Location = new System.Drawing.Point(355, 142);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(13, 13);
-            this.label8.TabIndex = 34;
-            this.label8.Text = "4";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label8.Visible = false;
+            this.slot11.AutoSize = true;
+            this.slot11.Image = global::Mancala.Properties.Resources.mancalaBrown;
+            this.slot11.Location = new System.Drawing.Point(355, 142);
+            this.slot11.Name = "slot11";
+            this.slot11.Size = new System.Drawing.Size(13, 13);
+            this.slot11.TabIndex = 34;
+            this.slot11.Text = "4";
+            this.slot11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.slot11.Visible = false;
             // 
-            // label9
+            // slot2
             // 
-            this.label9.AutoSize = true;
-            this.label9.Image = global::Mancala.Properties.Resources.mancalaBrown;
-            this.label9.Location = new System.Drawing.Point(271, 193);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(13, 13);
-            this.label9.TabIndex = 35;
-            this.label9.Text = "4";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label9.Visible = false;
+            this.slot2.AutoSize = true;
+            this.slot2.Image = global::Mancala.Properties.Resources.mancalaBrown;
+            this.slot2.Location = new System.Drawing.Point(271, 193);
+            this.slot2.Name = "slot2";
+            this.slot2.Size = new System.Drawing.Size(13, 13);
+            this.slot2.TabIndex = 35;
+            this.slot2.Text = "4";
+            this.slot2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.slot2.Visible = false;
             // 
-            // label10
+            // slot10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Image = global::Mancala.Properties.Resources.mancalaBrown;
-            this.label10.Location = new System.Drawing.Point(355, 193);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(13, 13);
-            this.label10.TabIndex = 36;
-            this.label10.Text = "4";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label10.Visible = false;
+            this.slot10.AutoSize = true;
+            this.slot10.Image = global::Mancala.Properties.Resources.mancalaBrown;
+            this.slot10.Location = new System.Drawing.Point(355, 193);
+            this.slot10.Name = "slot10";
+            this.slot10.Size = new System.Drawing.Size(13, 13);
+            this.slot10.TabIndex = 36;
+            this.slot10.Text = "4";
+            this.slot10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.slot10.Visible = false;
             // 
-            // label11
+            // slot3
             // 
-            this.label11.AutoSize = true;
-            this.label11.Image = global::Mancala.Properties.Resources.mancalaBrown;
-            this.label11.Location = new System.Drawing.Point(271, 248);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(13, 13);
-            this.label11.TabIndex = 37;
-            this.label11.Text = "4";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label11.Visible = false;
+            this.slot3.AutoSize = true;
+            this.slot3.Image = global::Mancala.Properties.Resources.mancalaBrown;
+            this.slot3.Location = new System.Drawing.Point(271, 248);
+            this.slot3.Name = "slot3";
+            this.slot3.Size = new System.Drawing.Size(13, 13);
+            this.slot3.TabIndex = 37;
+            this.slot3.Text = "4";
+            this.slot3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.slot3.Visible = false;
             // 
-            // label12
+            // slot9
             // 
-            this.label12.AutoSize = true;
-            this.label12.Image = global::Mancala.Properties.Resources.mancalaBrown;
-            this.label12.Location = new System.Drawing.Point(355, 248);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(13, 13);
-            this.label12.TabIndex = 38;
-            this.label12.Text = "4";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label12.Visible = false;
+            this.slot9.AutoSize = true;
+            this.slot9.Image = global::Mancala.Properties.Resources.mancalaBrown;
+            this.slot9.Location = new System.Drawing.Point(355, 248);
+            this.slot9.Name = "slot9";
+            this.slot9.Size = new System.Drawing.Size(13, 13);
+            this.slot9.TabIndex = 38;
+            this.slot9.Text = "4";
+            this.slot9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.slot9.Visible = false;
             // 
-            // label13
+            // slot4
             // 
-            this.label13.AutoSize = true;
-            this.label13.Image = global::Mancala.Properties.Resources.mancalaBrown;
-            this.label13.Location = new System.Drawing.Point(271, 303);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(13, 13);
-            this.label13.TabIndex = 39;
-            this.label13.Text = "4";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label13.Visible = false;
+            this.slot4.AutoSize = true;
+            this.slot4.Image = global::Mancala.Properties.Resources.mancalaBrown;
+            this.slot4.Location = new System.Drawing.Point(271, 303);
+            this.slot4.Name = "slot4";
+            this.slot4.Size = new System.Drawing.Size(13, 13);
+            this.slot4.TabIndex = 39;
+            this.slot4.Text = "4";
+            this.slot4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.slot4.Visible = false;
             // 
-            // label14
+            // slot8
             // 
-            this.label14.AutoSize = true;
-            this.label14.Image = global::Mancala.Properties.Resources.mancalaBrown;
-            this.label14.Location = new System.Drawing.Point(355, 303);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(13, 13);
-            this.label14.TabIndex = 40;
-            this.label14.Text = "4";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label14.Visible = false;
+            this.slot8.AutoSize = true;
+            this.slot8.Image = global::Mancala.Properties.Resources.mancalaBrown;
+            this.slot8.Location = new System.Drawing.Point(355, 303);
+            this.slot8.Name = "slot8";
+            this.slot8.Size = new System.Drawing.Size(13, 13);
+            this.slot8.TabIndex = 40;
+            this.slot8.Text = "4";
+            this.slot8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.slot8.Visible = false;
             // 
-            // label15
+            // slot7
             // 
-            this.label15.AutoSize = true;
-            this.label15.Image = global::Mancala.Properties.Resources.mancalaBrown;
-            this.label15.Location = new System.Drawing.Point(355, 358);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(13, 13);
-            this.label15.TabIndex = 41;
-            this.label15.Text = "4";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label15.Visible = false;
+            this.slot7.AutoSize = true;
+            this.slot7.Image = global::Mancala.Properties.Resources.mancalaBrown;
+            this.slot7.Location = new System.Drawing.Point(355, 358);
+            this.slot7.Name = "slot7";
+            this.slot7.Size = new System.Drawing.Size(13, 13);
+            this.slot7.TabIndex = 41;
+            this.slot7.Text = "4";
+            this.slot7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.slot7.Visible = false;
             // 
-            // label16
+            // slot5
             // 
-            this.label16.AutoSize = true;
-            this.label16.Image = global::Mancala.Properties.Resources.mancalaBrown;
-            this.label16.Location = new System.Drawing.Point(271, 358);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(13, 13);
-            this.label16.TabIndex = 42;
-            this.label16.Text = "4";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label16.Visible = false;
+            this.slot5.AutoSize = true;
+            this.slot5.Image = global::Mancala.Properties.Resources.mancalaBrown;
+            this.slot5.Location = new System.Drawing.Point(271, 358);
+            this.slot5.Name = "slot5";
+            this.slot5.Size = new System.Drawing.Size(13, 13);
+            this.slot5.TabIndex = 42;
+            this.slot5.Text = "4";
+            this.slot5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.slot5.Visible = false;
             // 
             // checkBox1
             // 
@@ -608,11 +589,38 @@ namespace Mancala
             this.checkBox12.TabIndex = 55;
             this.checkBox12.UseVisualStyleBackColor = true;
             // 
+            // slot6
+            // 
+            this.slot6.AutoSize = true;
+            this.slot6.Image = global::Mancala.Properties.Resources.mancalaBrown;
+            this.slot6.Location = new System.Drawing.Point(315, 425);
+            this.slot6.Name = "slot6";
+            this.slot6.Size = new System.Drawing.Size(13, 13);
+            this.slot6.TabIndex = 56;
+            this.slot6.Text = "4";
+            this.slot6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.slot6.Visible = false;
+            this.slot6.Click += new System.EventHandler(this.label5_Click_1);
+            // 
+            // slot13
+            // 
+            this.slot13.AutoSize = true;
+            this.slot13.Image = global::Mancala.Properties.Resources.mancalaBrown;
+            this.slot13.Location = new System.Drawing.Point(315, 35);
+            this.slot13.Name = "slot13";
+            this.slot13.Size = new System.Drawing.Size(13, 13);
+            this.slot13.TabIndex = 57;
+            this.slot13.Text = "4";
+            this.slot13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.slot13.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(471, 487);
+            this.Controls.Add(this.slot13);
+            this.Controls.Add(this.slot6);
             this.Controls.Add(this.checkBox12);
             this.Controls.Add(this.checkBox11);
             this.Controls.Add(this.checkBox10);
@@ -625,20 +633,18 @@ namespace Mancala
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.slot5);
+            this.Controls.Add(this.slot7);
+            this.Controls.Add(this.slot8);
+            this.Controls.Add(this.slot4);
+            this.Controls.Add(this.slot9);
+            this.Controls.Add(this.slot3);
+            this.Controls.Add(this.slot10);
+            this.Controls.Add(this.slot2);
+            this.Controls.Add(this.slot11);
+            this.Controls.Add(this.slot1);
+            this.Controls.Add(this.slot12);
+            this.Controls.Add(this.slot0);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox15);
@@ -713,20 +719,18 @@ namespace Mancala
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label slot0;
+        private System.Windows.Forms.Label slot12;
+        private System.Windows.Forms.Label slot1;
+        private System.Windows.Forms.Label slot11;
+        private System.Windows.Forms.Label slot2;
+        private System.Windows.Forms.Label slot10;
+        private System.Windows.Forms.Label slot3;
+        private System.Windows.Forms.Label slot9;
+        private System.Windows.Forms.Label slot4;
+        private System.Windows.Forms.Label slot8;
+        private System.Windows.Forms.Label slot7;
+        private System.Windows.Forms.Label slot5;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox3;
@@ -739,6 +743,8 @@ namespace Mancala
         private System.Windows.Forms.CheckBox checkBox10;
         private System.Windows.Forms.CheckBox checkBox11;
         private System.Windows.Forms.CheckBox checkBox12;
+        private System.Windows.Forms.Label slot6;
+        private System.Windows.Forms.Label slot13;
     }
 }
 
