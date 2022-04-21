@@ -20,9 +20,9 @@ namespace Mancala
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            // Application.Run(new Form1());
+            Application.Run(new Form1());
 
-            
+            /*
             FileIO fileIO = new FileIO("topInput.txt", "botInput.txt", "output.txt");
 
             int curMove, played = 1;
@@ -47,14 +47,15 @@ namespace Mancala
 
             if (played == GAME_WON)
             {
-                /* declare winner however it's done */
+                // declare winner however it's done 
             } else if (played == MOVE_ISSUE)
             {
-                /* acknowledge invalid move */
+                // acknowledge invalid move 
             } else
             {
-                /* acknowledge I/O issue */
+                // acknowledge I/O issue
             }
+            */
         }
     }
 }

@@ -67,7 +67,7 @@ namespace Mancala
         {
             if (player1 == 1 && player2 == 1)
             {  // both computers
-
+                ControlGame.
             }
 
         }

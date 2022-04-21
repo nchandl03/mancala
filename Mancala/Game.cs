@@ -15,6 +15,8 @@ namespace Mancala
          *      0   1   2   3   4   5
          */
 
+        // comp is top :/
+
         public static int[] board;
         public static int boardSize;
 

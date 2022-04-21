@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mancala
 {
-    public static class Control
+    public static class ControlGame
     {
         const int GAME_WON = 0;
         const int MOVE_ISSUE = -1;
