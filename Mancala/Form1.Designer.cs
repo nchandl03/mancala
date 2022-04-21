@@ -101,45 +101,50 @@ namespace Mancala
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 30);
+            this.label1.Location = new System.Drawing.Point(11, 37);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 13);
+            this.label1.Size = new System.Drawing.Size(59, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Player 1:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 66);
+            this.label2.Location = new System.Drawing.Point(11, 81);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 13);
+            this.label2.Size = new System.Drawing.Size(56, 16);
             this.label2.TabIndex = 3;
             this.label2.Text = "Score: 0";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 106);
+            this.label3.Location = new System.Drawing.Point(11, 130);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 13);
+            this.label3.Size = new System.Drawing.Size(59, 16);
             this.label3.TabIndex = 4;
             this.label3.Text = "Player 2:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(8, 142);
+            this.label4.Location = new System.Drawing.Point(11, 175);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 13);
+            this.label4.Size = new System.Drawing.Size(56, 16);
             this.label4.TabIndex = 7;
             this.label4.Text = "Score: 0";
             // 
             // human1
             // 
             this.human1.AutoSize = true;
-            this.human1.Location = new System.Drawing.Point(12, 46);
+            this.human1.Location = new System.Drawing.Point(16, 57);
+            this.human1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.human1.Name = "human1";
-            this.human1.Size = new System.Drawing.Size(60, 17);
+            this.human1.Size = new System.Drawing.Size(72, 20);
             this.human1.TabIndex = 9;
             this.human1.Text = "Human";
             this.human1.UseVisualStyleBackColor = true;
@@ -148,9 +153,10 @@ namespace Mancala
             // computer1
             // 
             this.computer1.AutoSize = true;
-            this.computer1.Location = new System.Drawing.Point(78, 46);
+            this.computer1.Location = new System.Drawing.Point(104, 57);
+            this.computer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.computer1.Name = "computer1";
-            this.computer1.Size = new System.Drawing.Size(71, 17);
+            this.computer1.Size = new System.Drawing.Size(87, 20);
             this.computer1.TabIndex = 10;
             this.computer1.Text = "Computer";
             this.computer1.UseVisualStyleBackColor = true;
@@ -159,9 +165,10 @@ namespace Mancala
             // human2
             // 
             this.human2.AutoSize = true;
-            this.human2.Location = new System.Drawing.Point(12, 122);
+            this.human2.Location = new System.Drawing.Point(16, 150);
+            this.human2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.human2.Name = "human2";
-            this.human2.Size = new System.Drawing.Size(60, 17);
+            this.human2.Size = new System.Drawing.Size(72, 20);
             this.human2.TabIndex = 11;
             this.human2.Text = "Human";
             this.human2.UseVisualStyleBackColor = true;
@@ -170,9 +177,10 @@ namespace Mancala
             // computer2
             // 
             this.computer2.AutoSize = true;
-            this.computer2.Location = new System.Drawing.Point(78, 122);
+            this.computer2.Location = new System.Drawing.Point(104, 150);
+            this.computer2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.computer2.Name = "computer2";
-            this.computer2.Size = new System.Drawing.Size(71, 17);
+            this.computer2.Size = new System.Drawing.Size(87, 20);
             this.computer2.TabIndex = 12;
             this.computer2.Text = "Computer";
             this.computer2.UseVisualStyleBackColor = true;
@@ -180,9 +188,10 @@ namespace Mancala
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 176);
+            this.button1.Location = new System.Drawing.Point(16, 217);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 27;
             this.button1.Text = "Start";
             this.button1.UseVisualStyleBackColor = true;
@@ -190,9 +199,10 @@ namespace Mancala
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(11, 205);
+            this.button2.Location = new System.Drawing.Point(15, 252);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(100, 28);
             this.button2.TabIndex = 28;
             this.button2.Text = "Exit";
             this.button2.UseVisualStyleBackColor = true;
@@ -201,9 +211,10 @@ namespace Mancala
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.Tan;
-            this.textBox1.Location = new System.Drawing.Point(262, 422);
+            this.textBox1.Location = new System.Drawing.Point(349, 519);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(118, 20);
+            this.textBox1.Size = new System.Drawing.Size(156, 22);
             this.textBox1.TabIndex = 29;
             this.textBox1.Text = "0";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -211,9 +222,10 @@ namespace Mancala
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.Color.Tan;
-            this.textBox2.Location = new System.Drawing.Point(262, 30);
+            this.textBox2.Location = new System.Drawing.Point(349, 37);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(118, 20);
+            this.textBox2.Size = new System.Drawing.Size(156, 22);
             this.textBox2.TabIndex = 30;
             this.textBox2.Text = "0";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -221,54 +233,60 @@ namespace Mancala
             // pictureBox15
             // 
             this.pictureBox15.BackgroundImage = global::Mancala.Properties.Resources.mancalaBrown;
-            this.pictureBox15.Location = new System.Drawing.Point(336, 358);
+            this.pictureBox15.Location = new System.Drawing.Point(448, 441);
+            this.pictureBox15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(50, 37);
+            this.pictureBox15.Size = new System.Drawing.Size(67, 46);
             this.pictureBox15.TabIndex = 26;
             this.pictureBox15.TabStop = false;
             // 
             // pictureBox14
             // 
             this.pictureBox14.BackgroundImage = global::Mancala.Properties.Resources.mancalaBrown;
-            this.pictureBox14.Location = new System.Drawing.Point(336, 303);
+            this.pictureBox14.Location = new System.Drawing.Point(448, 373);
+            this.pictureBox14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(50, 37);
+            this.pictureBox14.Size = new System.Drawing.Size(67, 46);
             this.pictureBox14.TabIndex = 25;
             this.pictureBox14.TabStop = false;
             // 
             // pictureBox13
             // 
             this.pictureBox13.BackgroundImage = global::Mancala.Properties.Resources.mancalaBrown;
-            this.pictureBox13.Location = new System.Drawing.Point(336, 248);
+            this.pictureBox13.Location = new System.Drawing.Point(448, 305);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(50, 37);
+            this.pictureBox13.Size = new System.Drawing.Size(67, 46);
             this.pictureBox13.TabIndex = 24;
             this.pictureBox13.TabStop = false;
             // 
             // pictureBox12
             // 
             this.pictureBox12.BackgroundImage = global::Mancala.Properties.Resources.mancalaBrown;
-            this.pictureBox12.Location = new System.Drawing.Point(336, 138);
+            this.pictureBox12.Location = new System.Drawing.Point(448, 170);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(50, 37);
+            this.pictureBox12.Size = new System.Drawing.Size(67, 46);
             this.pictureBox12.TabIndex = 23;
             this.pictureBox12.TabStop = false;
             // 
             // pictureBox11
             // 
             this.pictureBox11.BackgroundImage = global::Mancala.Properties.Resources.mancalaBrown;
-            this.pictureBox11.Location = new System.Drawing.Point(336, 193);
+            this.pictureBox11.Location = new System.Drawing.Point(448, 238);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(50, 37);
+            this.pictureBox11.Size = new System.Drawing.Size(67, 46);
             this.pictureBox11.TabIndex = 22;
             this.pictureBox11.TabStop = false;
             // 
             // pictureBox10
             // 
             this.pictureBox10.BackgroundImage = global::Mancala.Properties.Resources.mancalaBrown;
-            this.pictureBox10.Location = new System.Drawing.Point(253, 358);
+            this.pictureBox10.Location = new System.Drawing.Point(337, 441);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(50, 35);
+            this.pictureBox10.Size = new System.Drawing.Size(67, 43);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox10.TabIndex = 21;
             this.pictureBox10.TabStop = false;
@@ -276,72 +294,80 @@ namespace Mancala
             // pictureBox9
             // 
             this.pictureBox9.BackgroundImage = global::Mancala.Properties.Resources.mancalaBrown;
-            this.pictureBox9.Location = new System.Drawing.Point(253, 303);
+            this.pictureBox9.Location = new System.Drawing.Point(337, 373);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(50, 37);
+            this.pictureBox9.Size = new System.Drawing.Size(67, 46);
             this.pictureBox9.TabIndex = 20;
             this.pictureBox9.TabStop = false;
             // 
             // pictureBox8
             // 
             this.pictureBox8.BackgroundImage = global::Mancala.Properties.Resources.mancalaBrown;
-            this.pictureBox8.Location = new System.Drawing.Point(253, 248);
+            this.pictureBox8.Location = new System.Drawing.Point(337, 305);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(50, 37);
+            this.pictureBox8.Size = new System.Drawing.Size(67, 46);
             this.pictureBox8.TabIndex = 19;
             this.pictureBox8.TabStop = false;
             // 
             // pictureBox7
             // 
             this.pictureBox7.BackgroundImage = global::Mancala.Properties.Resources.mancalaBrown;
-            this.pictureBox7.Location = new System.Drawing.Point(253, 193);
+            this.pictureBox7.Location = new System.Drawing.Point(337, 238);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(50, 37);
+            this.pictureBox7.Size = new System.Drawing.Size(67, 46);
             this.pictureBox7.TabIndex = 18;
             this.pictureBox7.TabStop = false;
             // 
             // pictureBox6
             // 
             this.pictureBox6.BackgroundImage = global::Mancala.Properties.Resources.mancalaBrown;
-            this.pictureBox6.Location = new System.Drawing.Point(253, 138);
+            this.pictureBox6.Location = new System.Drawing.Point(337, 170);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(50, 37);
+            this.pictureBox6.Size = new System.Drawing.Size(67, 46);
             this.pictureBox6.TabIndex = 17;
             this.pictureBox6.TabStop = false;
             // 
             // pictureBox5
             // 
             this.pictureBox5.BackgroundImage = global::Mancala.Properties.Resources.mancalaBrown;
-            this.pictureBox5.Location = new System.Drawing.Point(339, 80);
+            this.pictureBox5.Location = new System.Drawing.Point(452, 98);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(47, 39);
+            this.pictureBox5.Size = new System.Drawing.Size(63, 48);
             this.pictureBox5.TabIndex = 16;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox4
             // 
             this.pictureBox4.BackgroundImage = global::Mancala.Properties.Resources.mancalaBrown;
-            this.pictureBox4.Location = new System.Drawing.Point(262, 413);
+            this.pictureBox4.Location = new System.Drawing.Point(349, 508);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(118, 39);
+            this.pictureBox4.Size = new System.Drawing.Size(157, 48);
             this.pictureBox4.TabIndex = 15;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackgroundImage = global::Mancala.Properties.Resources.mancalaBrown;
-            this.pictureBox3.Location = new System.Drawing.Point(262, 24);
+            this.pictureBox3.Location = new System.Drawing.Point(349, 30);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(118, 39);
+            this.pictureBox3.Size = new System.Drawing.Size(157, 48);
             this.pictureBox3.TabIndex = 14;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = global::Mancala.Properties.Resources.mancalaBrown;
-            this.pictureBox2.Location = new System.Drawing.Point(253, 80);
+            this.pictureBox2.Location = new System.Drawing.Point(337, 98);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(50, 39);
+            this.pictureBox2.Size = new System.Drawing.Size(67, 48);
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
@@ -349,9 +375,10 @@ namespace Mancala
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::Mancala.Properties.Resources.mancala2;
-            this.pictureBox1.Location = new System.Drawing.Point(228, 1);
+            this.pictureBox1.Location = new System.Drawing.Point(304, 1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(185, 474);
+            this.pictureBox1.Size = new System.Drawing.Size(247, 583);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
@@ -359,9 +386,10 @@ namespace Mancala
             // 
             this.label5.AutoSize = true;
             this.label5.Image = global::Mancala.Properties.Resources.mancalaBrown;
-            this.label5.Location = new System.Drawing.Point(271, 80);
+            this.label5.Location = new System.Drawing.Point(361, 98);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(13, 13);
+            this.label5.Size = new System.Drawing.Size(14, 16);
             this.label5.TabIndex = 31;
             this.label5.Text = "4";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -372,9 +400,10 @@ namespace Mancala
             // 
             this.label6.AutoSize = true;
             this.label6.Image = global::Mancala.Properties.Resources.mancalaBrown;
-            this.label6.Location = new System.Drawing.Point(355, 80);
+            this.label6.Location = new System.Drawing.Point(473, 98);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(13, 13);
+            this.label6.Size = new System.Drawing.Size(14, 16);
             this.label6.TabIndex = 32;
             this.label6.Text = "4";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -384,9 +413,10 @@ namespace Mancala
             // 
             this.label7.AutoSize = true;
             this.label7.Image = global::Mancala.Properties.Resources.mancalaBrown;
-            this.label7.Location = new System.Drawing.Point(271, 142);
+            this.label7.Location = new System.Drawing.Point(361, 175);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(13, 13);
+            this.label7.Size = new System.Drawing.Size(14, 16);
             this.label7.TabIndex = 33;
             this.label7.Text = "4";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -396,9 +426,10 @@ namespace Mancala
             // 
             this.label8.AutoSize = true;
             this.label8.Image = global::Mancala.Properties.Resources.mancalaBrown;
-            this.label8.Location = new System.Drawing.Point(355, 142);
+            this.label8.Location = new System.Drawing.Point(473, 175);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(13, 13);
+            this.label8.Size = new System.Drawing.Size(14, 16);
             this.label8.TabIndex = 34;
             this.label8.Text = "4";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -408,9 +439,10 @@ namespace Mancala
             // 
             this.label9.AutoSize = true;
             this.label9.Image = global::Mancala.Properties.Resources.mancalaBrown;
-            this.label9.Location = new System.Drawing.Point(271, 193);
+            this.label9.Location = new System.Drawing.Point(361, 238);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(13, 13);
+            this.label9.Size = new System.Drawing.Size(14, 16);
             this.label9.TabIndex = 35;
             this.label9.Text = "4";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -420,9 +452,10 @@ namespace Mancala
             // 
             this.label10.AutoSize = true;
             this.label10.Image = global::Mancala.Properties.Resources.mancalaBrown;
-            this.label10.Location = new System.Drawing.Point(355, 193);
+            this.label10.Location = new System.Drawing.Point(473, 238);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(13, 13);
+            this.label10.Size = new System.Drawing.Size(14, 16);
             this.label10.TabIndex = 36;
             this.label10.Text = "4";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -432,9 +465,10 @@ namespace Mancala
             // 
             this.label11.AutoSize = true;
             this.label11.Image = global::Mancala.Properties.Resources.mancalaBrown;
-            this.label11.Location = new System.Drawing.Point(271, 248);
+            this.label11.Location = new System.Drawing.Point(361, 305);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(13, 13);
+            this.label11.Size = new System.Drawing.Size(14, 16);
             this.label11.TabIndex = 37;
             this.label11.Text = "4";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -444,9 +478,10 @@ namespace Mancala
             // 
             this.label12.AutoSize = true;
             this.label12.Image = global::Mancala.Properties.Resources.mancalaBrown;
-            this.label12.Location = new System.Drawing.Point(355, 248);
+            this.label12.Location = new System.Drawing.Point(473, 305);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(13, 13);
+            this.label12.Size = new System.Drawing.Size(14, 16);
             this.label12.TabIndex = 38;
             this.label12.Text = "4";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -456,9 +491,10 @@ namespace Mancala
             // 
             this.label13.AutoSize = true;
             this.label13.Image = global::Mancala.Properties.Resources.mancalaBrown;
-            this.label13.Location = new System.Drawing.Point(271, 303);
+            this.label13.Location = new System.Drawing.Point(361, 373);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(13, 13);
+            this.label13.Size = new System.Drawing.Size(14, 16);
             this.label13.TabIndex = 39;
             this.label13.Text = "4";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -468,9 +504,10 @@ namespace Mancala
             // 
             this.label14.AutoSize = true;
             this.label14.Image = global::Mancala.Properties.Resources.mancalaBrown;
-            this.label14.Location = new System.Drawing.Point(355, 303);
+            this.label14.Location = new System.Drawing.Point(473, 373);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(13, 13);
+            this.label14.Size = new System.Drawing.Size(14, 16);
             this.label14.TabIndex = 40;
             this.label14.Text = "4";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -480,9 +517,10 @@ namespace Mancala
             // 
             this.label15.AutoSize = true;
             this.label15.Image = global::Mancala.Properties.Resources.mancalaBrown;
-            this.label15.Location = new System.Drawing.Point(355, 358);
+            this.label15.Location = new System.Drawing.Point(473, 441);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(13, 13);
+            this.label15.Size = new System.Drawing.Size(14, 16);
             this.label15.TabIndex = 41;
             this.label15.Text = "4";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -492,9 +530,10 @@ namespace Mancala
             // 
             this.label16.AutoSize = true;
             this.label16.Image = global::Mancala.Properties.Resources.mancalaBrown;
-            this.label16.Location = new System.Drawing.Point(271, 358);
+            this.label16.Location = new System.Drawing.Point(361, 441);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(13, 13);
+            this.label16.Size = new System.Drawing.Size(14, 16);
             this.label16.TabIndex = 42;
             this.label16.Text = "4";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -503,17 +542,19 @@ namespace Mancala
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(269, 96);
+            this.checkBox1.Location = new System.Drawing.Point(359, 118);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
+            this.checkBox1.Size = new System.Drawing.Size(18, 17);
             this.checkBox1.TabIndex = 43;
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(93, 176);
+            this.button3.Location = new System.Drawing.Point(124, 217);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(100, 28);
             this.button3.TabIndex = 44;
             this.button3.Text = "Next Turn";
             this.button3.UseVisualStyleBackColor = true;
@@ -521,107 +562,118 @@ namespace Mancala
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(269, 158);
+            this.checkBox2.Location = new System.Drawing.Point(359, 194);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(15, 14);
+            this.checkBox2.Size = new System.Drawing.Size(18, 17);
             this.checkBox2.TabIndex = 45;
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(269, 209);
+            this.checkBox3.Location = new System.Drawing.Point(359, 257);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(15, 14);
+            this.checkBox3.Size = new System.Drawing.Size(18, 17);
             this.checkBox3.TabIndex = 46;
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(269, 264);
+            this.checkBox4.Location = new System.Drawing.Point(359, 325);
+            this.checkBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(15, 14);
+            this.checkBox4.Size = new System.Drawing.Size(18, 17);
             this.checkBox4.TabIndex = 47;
             this.checkBox4.UseVisualStyleBackColor = true;
             // 
             // checkBox5
             // 
             this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(269, 319);
+            this.checkBox5.Location = new System.Drawing.Point(359, 393);
+            this.checkBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(15, 14);
+            this.checkBox5.Size = new System.Drawing.Size(18, 17);
             this.checkBox5.TabIndex = 48;
             this.checkBox5.UseVisualStyleBackColor = true;
             // 
             // checkBox6
             // 
             this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(353, 96);
+            this.checkBox6.Location = new System.Drawing.Point(471, 118);
+            this.checkBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(15, 14);
+            this.checkBox6.Size = new System.Drawing.Size(18, 17);
             this.checkBox6.TabIndex = 49;
             this.checkBox6.UseVisualStyleBackColor = true;
             // 
             // checkBox7
             // 
             this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(353, 158);
+            this.checkBox7.Location = new System.Drawing.Point(471, 194);
+            this.checkBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(15, 14);
+            this.checkBox7.Size = new System.Drawing.Size(18, 17);
             this.checkBox7.TabIndex = 50;
             this.checkBox7.UseVisualStyleBackColor = true;
             // 
             // checkBox8
             // 
             this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(353, 209);
+            this.checkBox8.Location = new System.Drawing.Point(471, 257);
+            this.checkBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(15, 14);
+            this.checkBox8.Size = new System.Drawing.Size(18, 17);
             this.checkBox8.TabIndex = 51;
             this.checkBox8.UseVisualStyleBackColor = true;
             // 
             // checkBox9
             // 
             this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(353, 264);
+            this.checkBox9.Location = new System.Drawing.Point(471, 325);
+            this.checkBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(15, 14);
+            this.checkBox9.Size = new System.Drawing.Size(18, 17);
             this.checkBox9.TabIndex = 52;
             this.checkBox9.UseVisualStyleBackColor = true;
             // 
             // checkBox10
             // 
             this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(353, 319);
+            this.checkBox10.Location = new System.Drawing.Point(471, 393);
+            this.checkBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(15, 14);
+            this.checkBox10.Size = new System.Drawing.Size(18, 17);
             this.checkBox10.TabIndex = 53;
             this.checkBox10.UseVisualStyleBackColor = true;
             // 
             // checkBox11
             // 
             this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(269, 374);
+            this.checkBox11.Location = new System.Drawing.Point(359, 460);
+            this.checkBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(15, 14);
+            this.checkBox11.Size = new System.Drawing.Size(18, 17);
             this.checkBox11.TabIndex = 54;
             this.checkBox11.UseVisualStyleBackColor = true;
             // 
             // checkBox12
             // 
             this.checkBox12.AutoSize = true;
-            this.checkBox12.Location = new System.Drawing.Point(353, 374);
+            this.checkBox12.Location = new System.Drawing.Point(471, 460);
+            this.checkBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(15, 14);
+            this.checkBox12.Size = new System.Drawing.Size(18, 17);
             this.checkBox12.TabIndex = 55;
             this.checkBox12.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(471, 487);
+            this.ClientSize = new System.Drawing.Size(832, 599);
             this.Controls.Add(this.checkBox12);
             this.Controls.Add(this.checkBox11);
             this.Controls.Add(this.checkBox10);
@@ -674,6 +726,7 @@ namespace Mancala
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();

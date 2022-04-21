@@ -65,14 +65,11 @@ namespace Mancala
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (checkBox1.Checked)
-            {
-                int nextSpot = 0;
+            if (player1 == 1 && player2 == 1)
+            {  // both computers
+
             }
-            else
-            {
-                
-            }
+
         }
 
         private void label5_Click(object sender, EventArgs e)
