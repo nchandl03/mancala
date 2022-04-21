@@ -18,3 +18,13 @@ C:\Users\nchandl\Desktop\Spring22\CS 438\Mancala\obj\Debug\Mancala.csproj.Genera
 C:\Users\nchandl\Desktop\Spring22\CS 438\Mancala\obj\Debug\Mancala.csproj.CoreCompileInputs.cache
 C:\Users\nchandl\Desktop\Spring22\CS 438\Mancala\obj\Debug\Mancala.exe
 C:\Users\nchandl\Desktop\Spring22\CS 438\Mancala\obj\Debug\Mancala.pdb
+C:\Users\Sean\Source\Repos\mancala\Mancala\bin\Debug\Mancala.exe.config
+C:\Users\Sean\Source\Repos\mancala\Mancala\bin\Debug\Mancala.exe
+C:\Users\Sean\Source\Repos\mancala\Mancala\bin\Debug\Mancala.pdb
+C:\Users\Sean\Source\Repos\mancala\Mancala\obj\Debug\Mancala.csproj.AssemblyReference.cache
+C:\Users\Sean\Source\Repos\mancala\Mancala\obj\Debug\Mancala.Form1.resources
+C:\Users\Sean\Source\Repos\mancala\Mancala\obj\Debug\Mancala.Properties.Resources.resources
+C:\Users\Sean\Source\Repos\mancala\Mancala\obj\Debug\Mancala.csproj.GenerateResource.cache
+C:\Users\Sean\Source\Repos\mancala\Mancala\obj\Debug\Mancala.csproj.CoreCompileInputs.cache
+C:\Users\Sean\Source\Repos\mancala\Mancala\obj\Debug\Mancala.exe
+C:\Users\Sean\Source\Repos\mancala\Mancala\obj\Debug\Mancala.pdb
