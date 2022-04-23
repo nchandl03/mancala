@@ -10,6 +10,12 @@ using System.Windows.Forms;
 
 namespace Mancala
 {
+    public enum gameType
+    {
+        twoHuman,
+        oneHuman,
+        twoComps
+    }
     public partial class Form1 : Form
     {
 
@@ -17,6 +23,7 @@ namespace Mancala
         public int player2;
         public string fileName = "";
         public int playerTurn;
+        public gameType playerTypes;
 
         public Form1()
         {
@@ -67,9 +74,20 @@ namespace Mancala
         {
             if (player1 == 1 && player2 == 1)
             {  // both computers
-                ControlGame.
+                playerTypes = gameType.twoComps;
+                ControlGame.runCompVCompGame();
             }
 
+            else if (player1 == 1 || player2 == 1)
+            {
+                // one computer
+                playerTypes = gameType.oneHuman;
+            }
+
+            else
+            {
+                playerTypes = gameType.twoHuman;
+            }
         }
 
         private void label5_Click(object sender, EventArgs e)
