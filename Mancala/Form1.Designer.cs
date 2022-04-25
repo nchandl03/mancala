@@ -692,7 +692,7 @@ namespace Mancala
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.WindowText;
             this.pictureBox2.BackgroundImage = global::Mancala.Properties.Resources.mancalaBrown;
-            this.pictureBox2.Location = new System.Drawing.Point(229, 81);
+            this.pictureBox2.Location = new System.Drawing.Point(187, 85);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(67, 48);
