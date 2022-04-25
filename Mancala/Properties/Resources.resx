@@ -118,28 +118,52 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="mancalaBrown4Marble" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mancalaBrown4Marble.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="3Marble" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3Marble.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mancalaBrown3Marble" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mancalaBrown3Marble.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="2Marble" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2Marble.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mancalaBrown" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mancalaBrown.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mancalaBrown4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mancalaBrown4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mancalaBrown2Marble" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mancalaBrown2Marble.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="5Marble" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5Marble.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mancalaBrown4Marble1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mancalaBrown4Marble1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mancalaBrown1Marble" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mancalaBrown1Marble.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="4Marble" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4Marble.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mancalaBrown4Marble" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mancalaBrown4Marble.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mancalaBrown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mancalaBrown.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6Marble" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6Marble.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1Marble" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1Marble.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6Marble1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6Marble.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mancalaBrown3Marble" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mancalaBrown3Marble.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mancala2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mancala2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mancalaBrown4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mancalaBrown4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mancalaBrown2Marble" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mancalaBrown2Marble.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mancalaBrown1Marble" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mancalaBrown1Marble.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6Marble2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6Marble.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

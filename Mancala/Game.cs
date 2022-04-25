@@ -22,10 +22,9 @@ namespace Mancala
 
         public static int topStoreIndex, bottomStoreIndex;
         public static bool bottomTurn;
+        public static string winner;
 
-        public static bool topHuman, botHuman;
-
-        public static void setGame(int bottomSize, int numMarbles, int topIsHuman, int botIsHuman)
+        public static void setGame(int bottomSize, int numMarbles)
         {
             int totalpits = bottomSize * 2 + 2;
 
@@ -42,17 +41,6 @@ namespace Mancala
 
             board[topStoreIndex] = 0;
             board[bottomStoreIndex] = 0;
-
-            if (topIsHuman == 0)
-            {
-                topHuman = true;
-            } else { topHuman = false; }
-
-            if (botIsHuman == 0)
-            {
-                botHuman = true;
-            }
-            else { botHuman = false; }
 
             bottomTurn = true;
         }
@@ -165,9 +153,9 @@ namespace Mancala
         // change later
         static public void declareWinner()
         {
-            if      (board[bottomStoreIndex] > board[topStoreIndex]) { /* bottom wins */ }
-            else if (board[topStoreIndex] > board[bottomStoreIndex]) { /* top wins */ }
-            else                                                     { /* tie! */  }
+            if      (board[bottomStoreIndex] > board[topStoreIndex]) { winner = "Player 1"; } // bottom 
+            else if (board[topStoreIndex] > board[bottomStoreIndex]) { winner = "Player 2"; } // top
+            else                                                     { winner = "";  }
         }
 
         static public int playMove(int chosenIndex)

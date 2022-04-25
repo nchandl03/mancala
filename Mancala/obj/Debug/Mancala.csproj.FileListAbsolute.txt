@@ -28,3 +28,4 @@ C:\Users\Sean\Source\Repos\mancala\Mancala\obj\Debug\Mancala.csproj.GenerateReso
 C:\Users\Sean\Source\Repos\mancala\Mancala\obj\Debug\Mancala.csproj.CoreCompileInputs.cache
 C:\Users\Sean\Source\Repos\mancala\Mancala\obj\Debug\Mancala.exe
 C:\Users\Sean\Source\Repos\mancala\Mancala\obj\Debug\Mancala.pdb
+C:\Users\nchandl\Desktop\Spring22\CS 438\Mancala\obj\Debug\Mancala.Form1.resources

@@ -7,27 +7,13 @@ using System.Threading.Tasks;
 
 namespace Mancala
 {
-    public class FileIO
+    public static class FileIO
     {
-        string fileInTop;
-        string fileInBottom;
-        string fileOut;
-
-        public FileIO(string finTop, string finBottom, string fout)
-        {
-            fileInTop = finTop;
-            fileInBottom = finBottom;
-            fileOut = fout;
-        }
-
         // always outputs board the same way - is that okay?
-        public bool outputBoard()
+        public static bool outputBoard(string fileOut)
         {
             if (Game.board.Length < 1)
                 return false;
-
-            if (Game.botHuman && Game.topHuman)
-                return true;
 
             try
             {
@@ -66,7 +52,7 @@ namespace Mancala
 
         }
 
-        public int readInMove()
+        public static int readInMove(string fileInBottom, string fileInTop)
         {
             string line;
             string path = Game.bottomTurn ? fileInBottom : fileInTop;
