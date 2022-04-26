@@ -67,36 +67,10 @@ namespace Mancala
             this.B2 = new System.Windows.Forms.Button();
             this.B1 = new System.Windows.Forms.Button();
             this.B0 = new System.Windows.Forms.Button();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -230,6 +204,7 @@ namespace Mancala
             this.slot13.TabIndex = 30;
             this.slot13.Text = "0";
             this.slot13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.slot13.TextChanged += new System.EventHandler(this.slot13_TextChanged);
             // 
             // button3
             // 
@@ -403,6 +378,7 @@ namespace Mancala
             // 
             this.T0.BackColor = System.Drawing.Color.Transparent;
             this.T0.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("T0.BackgroundImage")));
+            this.T0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.T0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.T0.Location = new System.Drawing.Point(403, 352);
             this.T0.Name = "T0";
@@ -415,7 +391,8 @@ namespace Mancala
             // T1
             // 
             this.T1.BackColor = System.Drawing.Color.Transparent;
-            this.T1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("T1.BackgroundImage")));
+            this.T1.BackgroundImage = global::Mancala.Properties.Resources.MancalaWood2;
+            this.T1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.T1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.T1.Location = new System.Drawing.Point(403, 295);
             this.T1.Name = "T1";
@@ -429,6 +406,7 @@ namespace Mancala
             // 
             this.T2.BackColor = System.Drawing.Color.Transparent;
             this.T2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("T2.BackgroundImage")));
+            this.T2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.T2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.T2.Location = new System.Drawing.Point(404, 242);
             this.T2.Name = "T2";
@@ -442,6 +420,7 @@ namespace Mancala
             // 
             this.T3.BackColor = System.Drawing.Color.Transparent;
             this.T3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("T3.BackgroundImage")));
+            this.T3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.T3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.T3.Location = new System.Drawing.Point(403, 187);
             this.T3.Name = "T3";
@@ -455,6 +434,7 @@ namespace Mancala
             // 
             this.T4.BackColor = System.Drawing.Color.Transparent;
             this.T4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("T4.BackgroundImage")));
+            this.T4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.T4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.T4.Location = new System.Drawing.Point(403, 128);
             this.T4.Name = "T4";
@@ -467,9 +447,9 @@ namespace Mancala
             // T5
             // 
             this.T5.BackColor = System.Drawing.Color.Transparent;
-            this.T5.BackgroundImage = global::Mancala.Properties.Resources._1Marble;
+            this.T5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("T5.BackgroundImage")));
+            this.T5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.T5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.T5.Image = global::Mancala.Properties.Resources._6Marble2;
             this.T5.Location = new System.Drawing.Point(403, 73);
             this.T5.Name = "T5";
             this.T5.Size = new System.Drawing.Size(70, 49);
@@ -482,6 +462,7 @@ namespace Mancala
             // 
             this.B5.BackColor = System.Drawing.Color.Transparent;
             this.B5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("B5.BackgroundImage")));
+            this.B5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.B5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.B5.Location = new System.Drawing.Point(318, 352);
             this.B5.Name = "B5";
@@ -495,6 +476,7 @@ namespace Mancala
             // 
             this.B4.BackColor = System.Drawing.Color.Transparent;
             this.B4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("B4.BackgroundImage")));
+            this.B4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.B4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.B4.Location = new System.Drawing.Point(318, 297);
             this.B4.Name = "B4";
@@ -508,6 +490,7 @@ namespace Mancala
             // 
             this.B3.BackColor = System.Drawing.Color.Transparent;
             this.B3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("B3.BackgroundImage")));
+            this.B3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.B3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.B3.Location = new System.Drawing.Point(317, 242);
             this.B3.Name = "B3";
@@ -521,6 +504,7 @@ namespace Mancala
             // 
             this.B2.BackColor = System.Drawing.Color.Transparent;
             this.B2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("B2.BackgroundImage")));
+            this.B2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.B2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.B2.Location = new System.Drawing.Point(318, 187);
             this.B2.Name = "B2";
@@ -534,6 +518,7 @@ namespace Mancala
             // 
             this.B1.BackColor = System.Drawing.Color.Transparent;
             this.B1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("B1.BackgroundImage")));
+            this.B1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.B1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.B1.Location = new System.Drawing.Point(318, 130);
             this.B1.Name = "B1";
@@ -547,6 +532,7 @@ namespace Mancala
             // 
             this.B0.BackColor = System.Drawing.Color.Transparent;
             this.B0.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("B0.BackgroundImage")));
+            this.B0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.B0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.B0.Location = new System.Drawing.Point(318, 74);
             this.B0.Name = "B0";
@@ -557,120 +543,9 @@ namespace Mancala
             this.B0.UseVisualStyleBackColor = false;
             this.B0.Click += new System.EventHandler(this.B0_Click);
             // 
-            // pictureBox15
-            // 
-            this.pictureBox15.BackgroundImage = global::Mancala.Properties.Resources.mancalaBrown;
-            this.pictureBox15.Location = new System.Drawing.Point(695, 337);
-            this.pictureBox15.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(67, 46);
-            this.pictureBox15.TabIndex = 26;
-            this.pictureBox15.TabStop = false;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.BackgroundImage = global::Mancala.Properties.Resources.mancalaBrown;
-            this.pictureBox14.Location = new System.Drawing.Point(695, 282);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(67, 46);
-            this.pictureBox14.TabIndex = 25;
-            this.pictureBox14.TabStop = false;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.BackgroundImage = global::Mancala.Properties.Resources.mancalaBrown;
-            this.pictureBox13.Location = new System.Drawing.Point(695, 226);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(67, 46);
-            this.pictureBox13.TabIndex = 24;
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.BackgroundImage = global::Mancala.Properties.Resources.mancalaBrown;
-            this.pictureBox12.Location = new System.Drawing.Point(693, 114);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(67, 46);
-            this.pictureBox12.TabIndex = 23;
-            this.pictureBox12.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.BackgroundImage = global::Mancala.Properties.Resources.mancalaBrown;
-            this.pictureBox11.Location = new System.Drawing.Point(695, 172);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(67, 46);
-            this.pictureBox11.TabIndex = 22;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.BackgroundImage = global::Mancala.Properties.Resources.mancalaBrown;
-            this.pictureBox10.Location = new System.Drawing.Point(612, 340);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(67, 43);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox10.TabIndex = 21;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackgroundImage = global::Mancala.Properties.Resources.mancalaBrown;
-            this.pictureBox9.Location = new System.Drawing.Point(612, 282);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(67, 46);
-            this.pictureBox9.TabIndex = 20;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackgroundImage = global::Mancala.Properties.Resources.mancalaBrown;
-            this.pictureBox8.Location = new System.Drawing.Point(612, 226);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(67, 46);
-            this.pictureBox8.TabIndex = 19;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackgroundImage = global::Mancala.Properties.Resources.mancalaBrown;
-            this.pictureBox7.Location = new System.Drawing.Point(612, 172);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(67, 46);
-            this.pictureBox7.TabIndex = 18;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackgroundImage = global::Mancala.Properties.Resources.mancalaBrown;
-            this.pictureBox6.Location = new System.Drawing.Point(229, 137);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(67, 46);
-            this.pictureBox6.TabIndex = 17;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackgroundImage = global::Mancala.Properties.Resources.mancalaBrown;
-            this.pictureBox5.Location = new System.Drawing.Point(697, 58);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(63, 48);
-            this.pictureBox5.TabIndex = 16;
-            this.pictureBox5.TabStop = false;
-            // 
             // pictureBox4
             // 
-            this.pictureBox4.BackgroundImage = global::Mancala.Properties.Resources.mancalaBrown;
+            this.pictureBox4.BackgroundImage = global::Mancala.Properties.Resources.MancalaWood2;
             this.pictureBox4.Location = new System.Drawing.Point(317, 407);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
@@ -680,36 +555,14 @@ namespace Mancala
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackgroundImage = global::Mancala.Properties.Resources.mancalaBrown;
+            this.pictureBox3.BackgroundImage = global::Mancala.Properties.Resources.MancalaWood2;
             this.pictureBox3.Location = new System.Drawing.Point(318, 18);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(157, 48);
             this.pictureBox3.TabIndex = 14;
             this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.WindowText;
-            this.pictureBox2.BackgroundImage = global::Mancala.Properties.Resources.mancalaBrown;
-            this.pictureBox2.Location = new System.Drawing.Point(187, 85);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(67, 48);
-            this.pictureBox2.TabIndex = 13;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::Mancala.Properties.Resources.mancala2;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.NoMoveVert;
-            this.pictureBox1.Location = new System.Drawing.Point(304, 1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(247, 583);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // Form1
             // 
@@ -745,25 +598,12 @@ namespace Mancala
             this.Controls.Add(this.slot6);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox15);
-            this.Controls.Add(this.pictureBox14);
-            this.Controls.Add(this.pictureBox13);
-            this.Controls.Add(this.pictureBox12);
-            this.Controls.Add(this.pictureBox11);
-            this.Controls.Add(this.pictureBox10);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.computer2);
             this.Controls.Add(this.human2);
             this.Controls.Add(this.computer1);
             this.Controls.Add(this.human1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -771,21 +611,9 @@ namespace Mancala
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -797,25 +625,12 @@ namespace Mancala
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.CheckBox human1;
         private System.Windows.Forms.CheckBox computer1;
         private System.Windows.Forms.CheckBox human2;
         private System.Windows.Forms.CheckBox computer2;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox slot6;

@@ -72,6 +72,8 @@ namespace Mancala
                 return -1;
             }
 
+            Console.WriteLine(line);
+
             if (!Int32.TryParse(line, out moveIndex))
             {
                 Console.WriteLine("Invalid input - need move to be an integer.");

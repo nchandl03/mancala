@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 
 
@@ -30,6 +31,7 @@ namespace Mancala
         public string fileName = "";
         public int playerTurn;
         public gameType playerTypes;
+
         public Form1()
         {
             InitializeComponent();
@@ -79,6 +81,7 @@ namespace Mancala
         private void button1_Click(object sender, EventArgs e)
         {
             Game.setGame(6, 4);
+            updateMarbleNums();
 
             if (player1 == 1 && player2 == 1)
             {  // both computers
@@ -150,7 +153,7 @@ namespace Mancala
             while (played > 0)
             {
                 outCheck = FileIO.outputBoard("output.txt");
-                curMove = FileIO.readInMove("topInput.txt", "botInput.txt");
+                curMove = FileIO.readInMove("move.txt", "move.txt");
 
                 if (curMove > -1 && outCheck) { 
                     played = Game.playMove(curMove);
@@ -189,7 +192,11 @@ namespace Mancala
             bool outCheck;
                 
             outCheck = FileIO.outputBoard("output.txt");
-            curMove = FileIO.readInMove("topInput.txt", "botInput.txt");
+
+            // while it's top's turn !!
+            Process.Start("Greedy.exe");
+
+            curMove = FileIO.readInMove("move.txt", "move.txt");
 
             if (curMove > -1 && outCheck) { 
                 played = Game.playMove(curMove);
@@ -241,7 +248,7 @@ namespace Mancala
                     MessageBox.Show("Congratulations! " + Game.winner + " wins!");
                 }
 
-                MessageBox.Show("Would you look at that, it's a tie.");
+                else { MessageBox.Show("Would you look at that, it's a tie."); }
 
                 return true;
             }
@@ -253,7 +260,7 @@ namespace Mancala
                     MessageBox.Show("Player one made an invalid move. Game over.");
                 }
 
-                MessageBox.Show("Player two made an invalid move. Game over.");
+                else { MessageBox.Show("Player two made an invalid move. Game over."); }
 
                 return true;
             }
@@ -270,23 +277,70 @@ namespace Mancala
         private void resetGame()
         {
             Game.setGame(6, 0);
+            updateMarbleNums();
         }
         private void updateMarbleNums()
         {
-            slot0.Text = Game.board[0].ToString();
-            slot1.Text = Game.board[1].ToString();
-            slot2.Text = Game.board[2].ToString();
-            slot3.Text = Game.board[3].ToString();
-            slot4.Text = Game.board[4].ToString();
-            slot5.Text = Game.board[5].ToString();
-            slot6.Text = Game.board[6].ToString();
-            slot7.Text = Game.board[7].ToString();
-            slot8.Text = Game.board[8].ToString();
-            slot9.Text = Game.board[9].ToString();
-            slot10.Text = Game.board[10].ToString();
-            slot11.Text = Game.board[11].ToString();
-            slot12.Text = Game.board[12].ToString();
-            slot13.Text = Game.board[13].ToString();
+            // update label marble nums
+            string name = "slot";
+            for (int i = 0; i < 14; i++)
+            {
+                this.Controls[name + (i).ToString()].Text = Game.board[i].ToString();
+            }
+
+            // update bottom marble pics
+            for (int i = 0; i < 6;  i++)
+            {
+                name = "B" + (i % 6).ToString();
+                this.Controls[name].Text = Game.board[i].ToString();
+            }
+
+            // update top marble pics
+            for (int i = 7; i < 13; i++)
+            {
+                name = "T" + (i - 7).ToString();
+                this.Controls[name].Text = Game.board[i].ToString();
+            }
+
+            int index;
+            var chosenPic = Properties.Resources.mancalaBrown4Marble;
+
+            // update marble pics
+            for (int i = 0; i < 12; i++)
+            {
+
+
+                if (i < 6) { name = "B" + (i % 6).ToString(); index = i; }
+                else       { name = "T" + (i % 6).ToString(); index = 1 + i; }
+
+                switch (Game.board[index])
+                {
+                    case 0:
+                        chosenPic = Properties.Resources.MancalaWood2;
+                        break;
+                    case 1:
+                        chosenPic = Properties.Resources._1Marble;
+                        break;
+                    case 2:
+                        chosenPic = Properties.Resources._2Marble;
+                        break;
+                    case 3:
+                        chosenPic = Properties.Resources._3Marble;
+                        break;
+                    case 4:
+                        chosenPic = Properties.Resources._4Marble;
+                        break;
+                    case 5:
+                        chosenPic = Properties.Resources._5Marble;
+                        break;
+                    default:
+                        chosenPic = Properties.Resources._6Marble;
+                        break;
+                }
+
+                this.Controls[name].BackgroundImage = chosenPic;
+            }
+
         }
 
         private void B0_Click(object sender, EventArgs e)
@@ -347,6 +401,21 @@ namespace Mancala
         private void T0_Click(object sender, EventArgs e)
         {
             pitClicked("T0");
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void slot13_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
